@@ -1,6 +1,26 @@
  
 (function($) {
 
+	// Import the functions you need from the SDKs you need
+		import { initializeApp } from "firebase/app";
+		// TODO: Add SDKs for Firebase products that you want to use
+		// https://firebase.google.com/docs/web/setup#available-libraries
+		
+		// Your web app's Firebase configuration
+		const firebaseConfig = {
+		  apiKey: "AIzaSyAWs76mRDj8MDqjVOvdDGXO7EzbFYWCO3M",
+		  authDomain: "finano-31306.firebaseapp.com",
+		  databaseURL: "https://finano-31306-default-rtdb.asia-southeast1.firebasedatabase.app",
+		  projectId: "finano-31306",
+		  storageBucket: "finano-31306.appspot.com",
+		  messagingSenderId: "865437592733",
+		  appId: "1:865437592733:web:109c951cff80411a5ef874"
+		};
+		
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+	
+
 	var	$window = $(window),
 		$body = $('body'),
 		$wrapper = $('#wrapper'),
